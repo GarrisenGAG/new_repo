@@ -18,3 +18,15 @@ def generate_password():
                 password += chr(random.randint(65, 90))
     write_pass = tk.Label(window, text = password)
     write_pass.pack()
+
+window = tk.Tk()
+window.title("Генератор паролей")
+window.geometry("800x500")
+text = tk.Label(window, text = "Выберите длинну пароля")
+text.pack()
+
+entry = tk.Entry(window, width=15)
+entry.pack(pady=10)
+
+button = tk.Button(window, text = "Сгенерировать", command = generate_password)
+button.pack()
