@@ -16,3 +16,5 @@ def generate_password():
                 password += chr(random.randint(97,122))
             else:
                 password += chr(random.randint(65, 90))
+    write_pass = tk.Label(window, text = password)
+    write_pass.pack()
