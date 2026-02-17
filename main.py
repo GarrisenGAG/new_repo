@@ -1,12 +1,10 @@
 import tkinter as tk
-class PassGenerator:
-    def __init__(self, root):
-        self.root = root 
-        self.root.title("Генератор паролей")
-        self.root.geometry("500x400")
-        self.root.resizable(False, False)
-        
+import random
 
-root = tk.Tk()
-app = PassGenerator(root)
-root.mainloop()
+# Участник 1: Функция генерации пароля (начало)
+def generate_password():
+    password = ''
+    try:
+        length = int(entry.get())
+    except ValueError:
+        return
