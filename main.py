@@ -30,3 +30,4 @@ entry.pack(pady=10)
 
 button = tk.Button(window, text = "Сгенерировать", command = generate_password)
 button.pack()
+window.mainloop()
